@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Calculator</title>
+  <title>The Elections</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js"></script>
 
@@ -11,13 +11,13 @@
     <ul class="list-group">
         <li v-for="candidate in candidates" class="list-group-item">
             {{candidate.name}} {{candidate.votes}}
-            <!-- increase votes 'on:click'-->
+         
             <button class="btn btn-default" @click="candidate.votes++">Vote</button>
         </li>
     </ul>
-    <!-- listening for keyboard event -->
+   
     <input @keyup.delete="clear" class="form-control" placeholder="press 'delete' to reset "></input>
-    <!-- display the name of the 'mayor' using a computed property-->
+   
     <h2>Our mayor is {{mayor.name}}!</h2>
     <pre>{{ $data }}</pre>
     <pre>{{ mayor }}</pre>
