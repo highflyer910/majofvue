@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>People of Gau</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>People of Gaul</h1>
+    <ul class="list-group">
+      <li v-for="person in orderedPeople()" class="list-group-item">
+        {{ person.name }} {{ person.age }}
+      </li>
+    </ul>
+    <h1>Old People of Gaul</h1>
+    <ul class="list-group">
+      <li v-for="person in old" class="list-group-item">
+        {{ person.name }} {{ person.age }}
+      </li>
+    </ul>
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>
