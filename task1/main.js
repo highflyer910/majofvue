@@ -1,7 +1,7 @@
 new Vue({
      el: '.container',
      data: {
-         gender: "male",
-         name: "Max",
+         gender: "female",
+         name: "Thea",
         }
     });
