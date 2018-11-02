@@ -2,9 +2,9 @@ new Vue({
   el: '.container',
   data: {
    candidates: [
-      {name: "Mr.Black", votes: 40},
-      {name: "Mr.White", votes: 20},
-      {name: "Mr.Red", votes: 50}
+      {name: "Mr.Vashadze", votes: 40},
+      {name: "Mr.Bakradze", votes: 20},
+      {name: "Mrs. Zourabischvili", votes: 10}
    ]
   },
    computed: {
